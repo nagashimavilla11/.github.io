@@ -11,10 +11,11 @@
   <meta property="og:title" content="Nagashima Villa 11｜長島の一棟貸し">
   <meta property="og:description" content="ナガシマリゾート近く。大人数でゆったり過ごせる一棟貸しの宿。">
   <meta property="og:url" content="https://nagashimavilla11.com/">
-  <meta property="og:image" content="https://nagashimavilla11.com/images/living-room.webp">
+  <meta property="og:image" content="https://nagashimavilla11.com/images/living-room.webp?v=2">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-ldk.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
@@ -33,7 +34,7 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <img src="images/living-room.webp" alt="Nagashima Villa 11の広々としたリビング・ダイニング">
+      <img src="images/hero-ldk.webp" alt="キッチンとリビングがひと続きになったNagashima Villa 11のLDK" fetchpriority="high" decoding="async">
       <div class="shade"></div>
       <div class="hero-copy"><p class="eyebrow light">A PRIVATE VILLA NEAR NAGASHIMA RESORT</p><h1>ナガシマリゾート近く<br>大人数でゆったり過ごせる<br>一棟貸しの宿</h1><p>家族と、仲間と、心ほどける時間を。</p><a class="button" href="#reservation">空室・料金を確認</a></div>
     </section>
@@ -46,37 +47,39 @@
     <section class="section gallery" id="gallery">
       <div class="wrap"><p class="eyebrow">GALLERY</p><h2>滞在のイメージを、写真で。</h2><p class="sub">画像を選択すると大きく表示できます。</p></div>
       <div class="gallery-grid wrap">
-        <button class="photo wide" data-label="リビング・ダイニング"><img src="images/living-room.webp" alt="ソファとオットマンを備えたリビング・ダイニング"><span>リビング・ダイニング</span></button>
-        <button class="photo" data-label="キッチン"><img src="images/kitchen-wide.webp" alt="冷蔵庫とアイランドを備えたキッチン"><span>キッチン</span></button>
-        <button class="photo" data-label="和室"><img src="images/tatami-room.webp" alt="床の間のある和紙畳の和室"><span>和室</span></button>
-        <button class="photo" data-label="ベッドルーム"><img src="images/bedroom-triple.webp" alt="ベッドを3台配置した寝室"><span>ベッドルーム</span></button>
-        <button class="photo" data-label="ツインルーム"><img src="images/bedroom-twin.webp" alt="シングルベッド2台のツインルーム"><span>ツインルーム</span></button>
-        <button class="photo" data-label="布団で休める和室"><img src="images/futon-room.webp" alt="布団を敷いた和室"><span>布団で休める和室</span></button>
-        <button class="photo" data-label="洗面・ランドリー"><img src="images/washroom.webp" alt="洗面台とドラム式洗濯乾燥機"><span>洗面・ランドリー</span></button>
-        <button class="photo" data-label="浴室"><img src="images/bathroom.webp" alt="清潔に整えた浴室"><span>浴室</span></button>
-        <button class="photo" data-label="キッチン家電・食器"><img src="images/kitchen-appliances.webp" alt="冷蔵庫、電子レンジ、食器とグラス"><span>キッチン家電・食器</span></button>
+        <button class="photo wide" data-label="リビング・ダイニング"><img src="images/living-room.webp" alt="ソファとオットマンを備えたリビング・ダイニング" loading="lazy" decoding="async"><span>リビング・ダイニング</span></button>
+        <button class="photo" data-label="くつろぎのソファスペース"><img src="images/living-sofa.webp" alt="4人掛けソファとウォールナットのローテーブルを配したリビング" loading="lazy" decoding="async"><span>くつろぎのソファスペース</span></button>
+        <button class="photo" data-label="カウンターとLDK"><img src="images/ldk-counter.webp" alt="カウンター越しにリビングを見通したLDK" loading="lazy" decoding="async"><span>カウンターとLDK</span></button>
+        <button class="photo" data-label="キッチン"><img src="images/kitchen-wide.webp" alt="冷蔵庫とアイランドを備えたキッチン" loading="lazy" decoding="async"><span>キッチン</span></button>
+        <button class="photo" data-label="キッチン家電・食器"><img src="images/kitchen-appliances.webp" alt="電子レンジ、電気ケトル、食器とグラスを収めた食器棚" loading="lazy" decoding="async"><span>キッチン家電・食器</span></button>
+        <button class="photo" data-label="和室"><img src="images/tatami-room.webp" alt="床の間のある和紙畳の和室" loading="lazy" decoding="async"><span>和室</span></button>
+        <button class="photo" data-label="ベッドルーム"><img src="images/bedroom-triple.webp" alt="ベッドを3台配置した寝室" loading="lazy" decoding="async"><span>ベッドルーム</span></button>
+        <button class="photo" data-label="ツインルーム"><img src="images/bedroom-twin.webp" alt="シングルベッド2台のツインルーム" loading="lazy" decoding="async"><span>ツインルーム</span></button>
+        <button class="photo" data-label="布団で休める和室"><img src="images/futon-room.webp" alt="布団を敷いた和室" loading="lazy" decoding="async"><span>布団で休める和室</span></button>
+        <button class="photo" data-label="洗面・ランドリー"><img src="images/washroom.webp" alt="洗面台とドラム式洗濯乾燥機" loading="lazy" decoding="async"><span>洗面・ランドリー</span></button>
+        <button class="photo" data-label="浴室"><img src="images/bathroom.webp" alt="清潔に整えた浴室" loading="lazy" decoding="async"><span>浴室</span></button>
+        <button class="photo" data-label="バスアメニティ"><img src="images/bath-amenities.webp" alt="浴室に用意したシャンプーとトリートメント" loading="lazy" decoding="async"><span>バスアメニティ</span></button>
+        <button class="photo" data-label="お手洗い"><img src="images/restroom.webp" alt="温水洗浄便座を備えたお手洗い" loading="lazy" decoding="async"><span>お手洗い</span></button>
       </div>
     </section>
 
     <section class="rooms" id="rooms">
-      <article class="room"><figure><img src="images/living-room.webp" alt="ソファとオットマンを備えたLDK"></figure><div><p class="eyebrow">LIVING &amp; DINING</p><h2>みんなで食事を楽しめる、開放的なLDK。</h2><p>ウォールナット天板のアイランドを中心に、家族や仲間が自然と集まれる空間です。大画面テレビを囲んで、滞在中もゆったりお過ごしいただけます。</p></div></article>
-      <article class="room reverse"><figure><img src="images/bedroom-triple.webp" alt="複数のベッドを配置した明るい洋室"></figure><div><p class="eyebrow">BEDROOMS</p><h2>大人数でも、それぞれがゆっくり休める寝室。</h2><p>ベッドを複数配置した洋室に加え、シングルベッド2台のツインルームをご用意しています。ご家族やご友人との旅行でも、就寝時はそれぞれ落ち着いてお休みいただけます。</p></div></article>
+      <article class="room"><figure><img src="images/ldk-counter.webp" alt="カウンター越しにリビングを見通したLDK" loading="lazy" decoding="async"></figure><div><p class="eyebrow">LIVING &amp; DINING</p><h2>みんなで食事を楽しめる、開放的なLDK。</h2><p>ウォールナット天板のアイランドを中心に、家族や仲間が自然と集まれる空間です。大画面テレビを囲んで、滞在中もゆったりお過ごしいただけます。</p></div></article>
+      <article class="room reverse"><figure><img src="images/bedroom-triple.webp" alt="複数のベッドを配置した明るい洋室" loading="lazy" decoding="async"></figure><div><p class="eyebrow">BEDROOMS</p><h2>大人数でも、それぞれがゆっくり休める寝室。</h2><p>ベッドを複数配置した洋室に加え、シングルベッド2台のツインルームをご用意しています。ご家族やご友人との旅行でも、就寝時はそれぞれ落ち着いてお休みいただけます。</p></div></article>
       <div class="sleep-options" aria-label="寝室の種類">
-        <figure><img src="images/bedroom-twin.webp" alt="シングルベッドを2台配置したツインルーム"><figcaption><b>ツインルーム</b><span>シングルベッドを2台配置した洋室</span></figcaption></figure>
-        <figure><img src="images/futon-room.webp" alt="布団を敷いて休める和室"><figcaption><b>和室での就寝</b><span>畳の上に布団を敷いて休める空間</span></figcaption></figure>
+        <figure><img src="images/bedroom-twin.webp" alt="シングルベッドを2台配置したツインルーム" loading="lazy" decoding="async"><figcaption><b>ツインルーム</b><span>シングルベッドを2台配置した洋室</span></figcaption></figure>
+        <figure><img src="images/futon-room.webp" alt="布団を敷いて休める和室" loading="lazy" decoding="async"><figcaption><b>和室での就寝</b><span>畳の上に布団を敷いて休める空間</span></figcaption></figure>
       </div>
-      <article class="room"><figure><img src="images/tatami-room.webp" alt="漫画を読みながらくつろげる和紙畳の和室"></figure><div><p class="eyebrow">JAPANESE LOUNGE</p><h2>漫画を片手に、畳でのんびり過ごす時間。</h2><p>和室には漫画をご用意し、読書や休憩を楽しめるくつろぎスペースとしてもご利用いただけます。和紙畳は、い草特有の香りがなく、ダニやカビが発生しにくいため、お子様連れや海外からのお客様にも快適です。</p></div></article>
-      <article class="room reverse"><figure><img src="images/kitchen-wide.webp" alt="冷蔵庫とアイランドを備えたキッチン"></figure><div><p class="eyebrow">KITCHEN AMENITIES</p><h2>軽食や食事の準備に便利な設備。</h2><p>冷蔵庫・電子レンジ・電気ケトル・ホットプレート・食器・グラス・カトラリーをご用意しています。</p><p class="note">※コンロ、包丁、鍋・フライパンは設置していません。</p></div></article>
-      <article class="room"><figure><img src="images/washroom.webp" alt="洗面台とドラム式洗濯乾燥機"></figure><div><p class="eyebrow">WASHROOM &amp; LAUNDRY</p><h2>朝の身支度も、長期滞在も快適に。</h2><p>大きな鏡を備えた洗面スペースで、朝の身支度もスムーズ。ドラム式洗濯乾燥機も設置しています。</p></div></article>
+      <article class="room"><figure><img src="images/tatami-room.webp" alt="漫画を読みながらくつろげる和紙畳の和室" loading="lazy" decoding="async"></figure><div><p class="eyebrow">JAPANESE LOUNGE</p><h2>漫画を片手に、畳でのんびり過ごす時間。</h2><p>和室には漫画をご用意し、読書や休憩を楽しめるくつろぎスペースとしてもご利用いただけます。和紙畳は、い草特有の香りがなく、ダニやカビが発生しにくいため、お子様連れや海外からのお客様にも快適です。</p></div></article>
+      <article class="room reverse"><figure><img src="images/kitchen-appliances.webp" alt="電子レンジ、電気ケトル、食器とグラスを収めた食器棚" loading="lazy" decoding="async"></figure><div><p class="eyebrow">KITCHEN AMENITIES</p><h2>軽食や食事の準備に便利な設備。</h2><p>冷蔵庫・電子レンジ・電気ケトル・ホットプレート・食器・グラス・カトラリーをご用意しています。</p><p class="note">※コンロ、包丁、鍋・フライパンは設置していません。</p></div></article>
+      <article class="room"><figure><img src="images/washroom.webp" alt="洗面台とドラム式洗濯乾燥機" loading="lazy" decoding="async"></figure><div><p class="eyebrow">WASHROOM &amp; LAUNDRY</p><h2>朝の身支度も、長期滞在も快適に。</h2><p>大きな鏡を備えた洗面スペースで、朝の身支度もスムーズ。ドラム式洗濯乾燥機も設置しています。</p></div></article>
     </section>
 
     <section class="around section" id="around"><div class="wrap"><p class="eyebrow light">AROUND NAGASHIMA</p><h2>長島リゾートも、名古屋も。<br>一棟を拠点に楽しむ旅。</h2><div class="spots"><div><span>ナガシマスパーランド</span><b>車で約5分</b></div><div><span>ジャズドリーム長島</span><b>車で約5分</b></div><div><span>なばなの里</span><b>車で約5分</b></div><div><span>名古屋アンパンマン<br>こどもミュージアム＆パーク</span><b>車で約5分</b></div><div><span>国営木曽三川公園</span><b>車で約15分</b></div><div><span>レゴランド・ジャパン</span><b>車で約20分</b></div></div><p class="note light-note">所要時間は目安です。季節や道路状況により変動します。</p></div></section>
 
     <section class="section" id="access"><div class="wrap access"><div><p class="eyebrow">ACCESS</p><h2>アクセス</h2><dl><dt>所在地</dt><dd>三重県桑名市長島町<br><small>番地はご予約確定後にご案内します。</small></dd><dt>駐車場</dt><dd>敷地内に無料駐車場あり</dd><dt>チェックイン</dt><dd>スマートロックによる無人セルフチェックイン</dd></dl></div><iframe title="三重県桑名市長島町周辺の地図" src="https://www.google.com/maps?q=%E4%B8%89%E9%87%8D%E7%9C%8C%E6%A1%91%E5%90%8D%E5%B8%82%E9%95%B7%E5%B3%B6%E7%94%BA&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
 
-    <section class="reservation section" id="reservation"><div class="wrap narrow center"><p class="eyebrow light">RESERVATION</p><h2>一棟、まるごと。<br>ご予約はこちらから。</h2><p>空室状況と最新料金をご確認いただけます。</p><div class="booking"><a class="button white" href="https://forms.gle/c6t1mFmWXMrE8oNh8" rel="noopener">公式サイト予約</a>
-      <!-- <a class="button outline" href="https://www.booking.com/hotel/jp/nagasima-vuira-11" rel="noopener">Booking.com</a> -->
-    </div><small>公式予約は外部の安全な予約画面へ移動します。</small></div></section>
+    <section class="reservation section" id="reservation"><div class="wrap narrow center"><p class="eyebrow light">RESERVATION</p><h2>一棟、まるごと。<br>ご予約はこちらから。</h2><p>空室状況と最新料金をご確認いただけます。</p><div class="booking"><a class="button white" href="https://beds24.com/book-nagashimavilla11" rel="noopener">公式サイト予約</a><a class="button outline" href="https://www.booking.com/hotel/jp/nagasima-vuira-11" rel="noopener">Booking.com</a></div><small>公式予約は外部の安全な予約画面へ移動します。</small></div></section>
   </main>
 
   <footer><div class="wrap footer"><div><strong>Nagashima Villa 11</strong><p>三重県桑名市長島町<br>ナガシマリゾート近くの一棟貸しの宿</p></div><div><span>施設名：ナガシマ ヴィラ 11</span><span>旅館業許可番号：桑2694-0004</span><a href="#reservation">ご予約</a></div></div></footer>
