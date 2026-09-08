@@ -34,7 +34,7 @@
 .button.airbnb img {
   display: block;
   width: auto;
-  height: 18px;
+  height: 30px;   /* 18px から変更 */
   filter: brightness(0) invert(1);
 }
 
