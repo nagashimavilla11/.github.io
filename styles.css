@@ -6,3 +6,38 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .sleep-options{display:grid;grid-template-columns:1fr 1fr;background:var(--ink);color:#fff}.sleep-options figure{position:relative;margin:0;min-height:430px;overflow:hidden}.sleep-options img{position:absolute;inset:0}.sleep-options figure::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(20,16,12,.8))}.sleep-options figcaption{position:absolute;z-index:1;left:35px;right:35px;bottom:28px}.sleep-options b,.sleep-options span{display:block}.sleep-options b{font-family:"Zen Old Mincho",serif;font-size:22px;font-weight:500}.sleep-options span{margin-top:5px;font-size:12px;opacity:.8}
 @media(max-width:820px){.sleep-options{grid-template-columns:1fr}.sleep-options figure{min-height:360px}}
+<style>
+/* ボタンが1つになったので1列に。中央に配置する */
+.booking {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 28px 0 18px;
+}
+
+/* Airbnbブランドカラーのボタン */
+.button.airbnb {
+  gap: 10px;
+  background: #fff;
+  border-color: #fff;
+  color: #ff385c;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.button.airbnb:hover {
+  background: #ff385c;
+  border-color: #ff385c;
+  color: #fff;
+}
+
+.button.airbnb img {
+  display: block;
+  width: auto;
+  height: 20px;
+}
+
+/* ホバー時にロゴを白く反転させる（透過PNGの場合のみ有効） */
+.button.airbnb:hover img {
+  filter: brightness(0) invert(1);
+}
+</style>
