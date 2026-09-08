@@ -14,13 +14,6 @@
   margin: 28px 0 18px;
 }
 
-/* Airbnbブランドカラーのボタン */
-.reservation .booking {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  margin: 28px 0 18px;
-}
-
 .button.airbnb {
   gap: 10px;
   background: #ff385c;
