@@ -15,29 +15,39 @@
 }
 
 /* Airbnbブランドカラーのボタン */
+.reservation .booking {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 28px 0 18px;
+}
+
 .button.airbnb {
   gap: 10px;
-  background: #fff;
-  border-color: #fff;
-  color: #ff385c;
+  background: #ff385c;
+  border-color: #ff385c;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
-.button.airbnb:hover {
-  background: #ff385c;
-  border-color: #ff385c;
-  color: #fff;
+.button.airbnb:hover,
+.button.airbnb:focus-visible,
+.button.airbnb:active {
+  background: #fff;
+  border-color: #fff;
+  color: #ff385c;
 }
 
 .button.airbnb img {
   display: block;
   width: auto;
   height: 18px;
+  filter: brightness(0) invert(1);
 }
 
-/* ホバー時にロゴを白く反転させる */
-.button.airbnb:hover img {
-  filter: brightness(0) invert(1);
+.button.airbnb:hover img,
+.button.airbnb:focus-visible img,
+.button.airbnb:active img {
+  filter: none;
 }
 </style>
