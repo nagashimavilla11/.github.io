@@ -3,6 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Google アナリティクス 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01PE7G929L"></script>
+<script>
+  // 自分の端末を計測対象外にする：URLの末尾に ?notrack=1 を付けて一度開く（?notrack=0 で解除）
+  try {
+    var nv11NoTrack = new URLSearchParams(location.search).get('notrack');
+    if (nv11NoTrack === '1') localStorage.setItem('nv11_notrack', '1');
+    if (nv11NoTrack === '0') localStorage.removeItem('nv11_notrack');
+    if (localStorage.getItem('nv11_notrack') === '1') window['ga-disable-G-01PE7G929L'] = true;
+  } catch (e) {}
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-01PE7G929L');
+</script>
 <title>ご利用ガイド｜Nagashima Villa 11</title>
 <meta name="description" content="ナガシマヴィラ11のキャンセルポリシー、特定商取引法に基づく表記、個人情報の取り扱いについてご案内します。">
 <meta name="robots" content="index,follow">
@@ -157,10 +172,14 @@
       <p>お客様ご本人からのご請求により、保有する個人情報の開示、訂正、利用停止または削除に応じます。下記の窓口までご連絡ください。ただし、法令により保存が義務づけられている情報については、この限りではありません。</p>
       <p>窓口：nagashima.villa.11@gmail.com　／　070-8494-5384</p>
 
+      <h3>アクセス解析ツールについて</h3>
+      <p>当サイトでは、サイトの利用状況を把握し改善に役立てるため、Google LLC が提供するアクセス解析ツール「Google アナリティクス」を利用しています。Google アナリティクスは Cookie 等を使用して、閲覧されたページ、当サイトへの訪問経路、ボタンや予約フォームの操作状況（泊数・人数・料金の目安を含みます）、ご利用の端末・ブラウザの種類、おおよその地域などの情報を収集します。これらの情報に、お名前やメールアドレスなど特定の個人を識別できる情報は含まれません。収集された情報は Google のプライバシーポリシーに基づいて管理されます。詳しくは「<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Google のサービスを使用するサイトやアプリから収集した情報の Google による使用</a>」をご覧ください。</p>
+      <p>Cookie はブラウザの設定で無効にできるほか、「<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a>」を利用して情報の収集を停止することもできます。</p>
+
       <h3>本方針の改定</h3>
       <p>法令の改正や運用の変更に伴い、本方針を改定する場合がございます。改定後の内容は本ページに掲載した時点から適用されます。</p>
 
-      <p class="updated">制定日：2026年8月1日</p>
+      <p class="updated">制定日：2026年8月1日　／　改定日：2026年9月14日</p>
     </div>
   </section>
 
@@ -176,5 +195,6 @@
 <footer><div class="wrap footer"><div><strong>Nagashima Villa 11</strong><p>三重県桑名市長島町<br>ナガシマリゾート近くの一棟貸しの宿</p></div><div><span>施設名：ナガシマ ヴィラ 11</span><span>旅館業許可番号：桑2694-0004</span><a href="/guide.html">ご利用ガイド</a><a href="/#reservation">ご予約</a></div></div></footer>
 
 <script src="script.js"></script>
+<script src="analytics.js"></script>
 </body>
 </html>
