@@ -3,6 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Google アナリティクス 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-01PE7G929L"></script>
+  <script>
+    // 自分の端末を計測対象外にする：URLの末尾に ?notrack=1 を付けて一度開く（?notrack=0 で解除）
+    try {
+      var nv11NoTrack = new URLSearchParams(location.search).get('notrack');
+      if (nv11NoTrack === '1') localStorage.setItem('nv11_notrack', '1');
+      if (nv11NoTrack === '0') localStorage.removeItem('nv11_notrack');
+      if (localStorage.getItem('nv11_notrack') === '1') window['ga-disable-G-01PE7G929L'] = true;
+    } catch (e) {}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-01PE7G929L');
+  </script>
   <title>Nagashima Villa 11｜ナガシマリゾート近くの一棟貸し</title>
   <meta name="description" content="三重県桑名市長島町、ナガシマリゾート近く。家族やグループでゆったり過ごせる一棟貸しの宿、Nagashima Villa 11。">
   <link rel="canonical" href="https://nagashimavilla11.com/">
@@ -117,6 +132,7 @@
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="写真を拡大表示" hidden><button type="button" aria-label="閉じる">×</button><img src="" alt=""><p></p></div>
   <a class="floating" href="#reservation">空室・料金を確認</a>
   <script src="script.js"></script>
+  <script src="analytics.js"></script>
   <script>
   window.addEventListener('message', function (event) {
     try {
