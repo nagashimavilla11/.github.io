@@ -13,7 +13,7 @@
   });
 
   // ギャラリー写真の拡大表示
-  document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>track('gallery_photo_open',{photo_label:button.dataset.caption||button.dataset.label||''})));
+  document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>track('gallery_photo_open',{photo_label:button.dataset.caption||button.dataset.caption||button.dataset.label||''})));
 
   // 予約エリアが画面に表示された（1ページ表示につき1回）
   const reservationHeading=document.querySelector('#reservation h2');

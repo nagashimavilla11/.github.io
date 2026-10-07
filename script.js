@@ -318,7 +318,7 @@ const pauseButton=document.querySelector('#hero-pause');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let slide=0, paused=reducedMotion.matches, timer;
 function showSlide(index){slide=index;frames.forEach((frame,i)=>frame.classList.toggle('active',i===slide));slideButtons.forEach((button,i)=>{button.classList.toggle('active',i===slide);button.setAttribute('aria-pressed',String(i===slide))})}
-function updatePlayback(){clearInterval(timer);hero.classList.toggle('motion-paused',paused||document.hidden);pauseButton.textContent=paused?'▶':'Ⅱ';pauseButton.setAttribute('aria-label',paused?'写真の自動再生を開始':'写真の自動再生を停止');if(!paused&&!document.hidden)timer=setInterval(()=>showSlide((slide+1)%frames.length),7000)}
+function updatePlayback(){clearInterval(timer);hero.classList.toggle('motion-paused',paused||document.hidden);pauseButton.textContent=paused?'▶':'Ⅱ';pauseButton.setAttribute('aria-label',paused?'写真の自動再生を開始':'写真の自動再生を停止');if(!paused&&!document.hidden)timer=setInterval(()=>showSlide((slide+1)%frames.length),4500)}
 slideButtons.forEach((button,index)=>button.addEventListener('click',()=>{showSlide(index);updatePlayback()}));
 pauseButton.addEventListener('click',()=>{paused=!paused;updatePlayback()});
 document.addEventListener('visibilitychange',updatePlayback);
