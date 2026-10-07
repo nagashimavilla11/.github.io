@@ -1,7 +1,7 @@
 // Google アナリティクス 4：予約導線のイベント計測（計測タグ本体は各ページの <head> 内）
 (()=>{
   const track=(name,params={})=>{if(typeof window.gtag==='function')window.gtag('event',name,params)};
-  const placeOf=el=>el.classList.contains('floating')?'floating':el.closest('header')?'header':el.closest('footer')?'footer':el.closest('.hero')?'hero':'content';
+  const placeOf=el=>(el.classList.contains('floating')||el.closest('.mobile-reserve'))?'floating':el.closest('header')?'header':el.closest('footer')?'footer':el.closest('.hero')?'hero':'content';
 
   // 「ご予約」「空室・料金を確認」ボタン（#reservation へのリンク）と、Airbnb・Booking.com への移動
   document.addEventListener('click',event=>{
@@ -13,7 +13,7 @@
   });
 
   // ギャラリー写真の拡大表示
-  document.querySelectorAll('.photo').forEach(button=>button.addEventListener('click',()=>track('gallery_photo_open',{photo_label:button.dataset.label||''})));
+  document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>track('gallery_photo_open',{photo_label:button.dataset.caption||button.dataset.label||''})));
 
   // 予約エリアが画面に表示された（1ページ表示につき1回）
   const reservationHeading=document.querySelector('#reservation h2');
