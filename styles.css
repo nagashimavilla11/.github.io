@@ -183,3 +183,30 @@ html:not([lang=ja]) .guide table{overflow-wrap:anywhere}
  .life-story figcaption,.destination-card figcaption strong{font-size:16px}
  .guide h1{font-size:26px}
 }
+
+/* Compact direct-booking guidance. */
+.booking-guide{max-width:900px;margin:0 auto 28px;color:#eee7dc;font-size:14px;line-height:1.8}
+.booking-benefit{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 14px;margin-bottom:20px}
+.booking-badge{padding:3px 12px;border:1px solid #bfa17b;color:#ead1ab;font-size:12px;letter-spacing:.08em}
+.booking-summary{display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;text-align:center}
+.booking-summary strong{display:block;font-size:15px;font-weight:500}
+.booking-summary small{display:block;margin-top:4px;font-size:12px;color:#cfc5b6}
+.booking-steps{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0 12px;padding:0;counter-reset:booking-step}
+.booking-steps li{position:relative;padding:12px 6px;border-top:1px solid #82735e;border-bottom:1px solid #82735e;text-align:center;font-size:13px}
+.booking-steps li::before{counter-increment:booking-step;content:counter(booking-step,decimal-leading-zero);display:block;color:#d8b582;font:14px Georgia,serif;margin-bottom:5px}
+.booking-steps li+li::after{content:"›";position:absolute;left:-12px;top:50%;transform:translateY(-50%);color:#d8b582;font-size:20px}
+.booking-flow{text-align:center;font-size:12px;color:#cfc5b6}
+.booking-flow summary{cursor:pointer;display:list-item;list-style-position:inside;padding:8px}
+.booking-flow summary:focus-visible{outline:2px solid #d8b582;outline-offset:3px}
+.booking-flow p{max-width:680px;margin:8px auto 0;text-align:left;line-height:1.9}
+.booking-guide .booking-language-note{text-align:center;margin-top:10px}
+@media(max-width:600px){
+ .booking-guide{font-size:13px;margin-bottom:22px}
+ .booking-benefit{gap:8px 10px;margin-bottom:16px}
+ .booking-summary{grid-template-columns:1fr;gap:12px}
+ .booking-summary strong{font-size:14px}
+ .booking-summary small{font-size:11px}
+ .booking-steps{gap:12px;margin-top:18px}
+ .booking-steps li{padding:10px 3px;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
+ .booking-steps li+li::after{left:-10px}
+}
