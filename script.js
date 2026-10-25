@@ -1,6 +1,7 @@
 window.NV11_TRANSLATIONS={};
 (()=>{
 const add=(keys,en,ko,tw)=>{for(const key of Array.isArray(keys)?keys:[keys])window.NV11_TRANSLATIONS[key]={en,ko,'zh-TW':tw}};
+add("予約受付について","Booking requests","예약 접수 안내","預訂申請說明");
 add("公式予約のご案内","Direct booking information","공식 예약 안내","官方預訂資訊");
 add("公式予約特典","Direct booking gift","공식 예약 혜택","官方預訂禮遇");
 add("施設からのプレゼントをご用意","A gift from the villa for direct bookings","공식 예약 고객께 숙소에서 선물을 드립니다","透過官網預訂，即享住宿方準備的禮物");
