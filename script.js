@@ -1,6 +1,19 @@
 window.NV11_TRANSLATIONS={};
 (()=>{
 const add=(keys,en,ko,tw)=>{for(const key of Array.isArray(keys)?keys:[keys])window.NV11_TRANSLATIONS[key]={en,ko,'zh-TW':tw}};
+add("公式予約のご案内","Direct booking information","공식 예약 안내","官方預訂資訊");
+add("公式予約特典","Direct booking gift","공식 예약 혜택","官方預訂禮遇");
+add("施設からのプレゼントをご用意","A gift from the villa for direct bookings","공식 예약 고객께 숙소에서 선물을 드립니다","透過官網預訂，即享住宿方準備的禮物");
+add("通常1時間以内に返信","We usually reply within an hour","보통 1시간 이내에 답변드립니다","通常於1小時內回覆");
+add("21:00以降は翌日返信の場合があります。","Requests after 9 pm Japan time may receive a reply the next day.","일본 시간 21시 이후에는 다음 날 답변드릴 수 있습니다.","日本時間21:00後的申請可能於翌日回覆。");
+add("約1年先まで予約受付","Book up to about a year ahead","약 1년 후까지 예약 가능","可預訂約一年內的住宿");
+add("日程と人数を選んで空室・料金を確認","Choose your dates and guest count to check availability and price","날짜와 인원을 선택해 빈 객실과 요금을 확인하세요","選擇日期與人數，查詢空房及價格");
+add("予約確定までの流れ","Steps to confirm your booking","예약 확정까지의 절차","預訂確認流程");
+add("リクエストを送信","Send your request","예약 요청","送出預訂申請");
+add("支払い案内を受信","Receive a payment link by email","이메일로 결제 안내","收取付款電郵");
+add("支払いで予約確定","Pay to confirm your booking","결제 완료 후 예약 확정","完成付款後確認預訂");
+add("お支払い・仮押さえについて","Payment and provisional holds","결제 및 임시 확보 안내","付款及暫時保留說明");
+add("受付可能な場合は、Stripeのお支払いURLをメールでお送りします。お支払い待ちの間は日程を仮押さえし、お支払い完了をもって予約確定となります。","If we can accept your request, we will email you a Stripe payment link. We provisionally hold your dates while awaiting payment. Your booking is confirmed once payment is complete.","예약이 가능한 경우 Stripe 결제 링크를 이메일로 보내드립니다. 결제를 기다리는 동안 날짜를 임시로 확보하며, 결제가 완료되면 예약이 확정됩니다.","如可接受您的申請，我們將透過電郵寄送 Stripe 付款連結。等待付款期間會暫時保留您的日期，完成付款後即確認預訂。");
 add('本文へ移動','Skip to content','본문으로 이동','跳至主要內容');
 add('ナガシマヴィラ11','Nagashima Villa 11','나가시마 빌라 11','長島 Villa 11');
 add('Nagashima Villa 11 トップ','Nagashima Villa 11 home','나가시마 빌라 11 홈','長島 Villa 11 首頁');
