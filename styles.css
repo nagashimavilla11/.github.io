@@ -210,3 +210,30 @@ html:not([lang=ja]) .guide table{overflow-wrap:anywhere}
  .booking-steps li{padding:10px 3px;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
  .booking-steps li+li::after{left:-10px}
 }
+
+/* 2026-11-21 CVR optimization: Hero CTA & OTA quick booking bar */
+.hero .eyebrow{font-family:var(--sans);font-size:13px;letter-spacing:.12em;color:#ead1ab;margin-bottom:18px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-copy .button.hero-cta-primary{background:#d8b582;border-color:#d8b582;color:#1b1916;font-weight:600;min-width:230px}
+.hero-copy .button.hero-cta-primary:hover{background:#ebd0a6;border-color:#ebd0a6;color:#1b1916}
+.ota-quick-box{max-width:1100px;margin:0 auto 26px;padding:22px 24px;background:#312d27;border:1px solid #d8b58288;text-align:center}
+.ota-quick-box-bottom{margin:26px auto 0}
+.ota-quick-title{font-size:13px;letter-spacing:.06em;color:#f3eadc;margin:0 0 14px;font-weight:500}
+.ota-quick-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:680px;margin:0 auto}
+.ota-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:62px;padding:12px 16px;border:1px solid #d8b582aa;background:#1f1d1a;color:#ffffff;transition:background .2s,border-color .2s,transform .15s}
+.ota-btn span{font-size:15px;font-weight:600;letter-spacing:.04em;color:#ffffff}
+.ota-btn small{font-size:11px;color:#ead1ab;letter-spacing:.03em}
+.ota-btn:hover{background:#3a342c;border-color:#f3ddc0;transform:translateY(-1px)}
+.ota-btn-airbnb{border-left:4px solid #ff5a5f}
+.ota-btn-booking{border-left:4px solid #4a90e2}
+@media(max-width:480px){
+ .hero .eyebrow{font-size:11px;letter-spacing:.05em;margin-bottom:14px}
+ .hero h1{font-size:22px;letter-spacing:.03em;line-height:1.75}
+ .hero-actions{flex-direction:column;align-items:stretch;gap:10px}
+ .hero-copy .button,.hero-copy .button.hero-cta-primary{width:100%;min-width:0;padding:13px 18px;min-height:48px}
+ .ota-quick-box{padding:16px 14px;margin-bottom:20px}
+ .ota-quick-title{font-size:12px;margin-bottom:12px}
+ .ota-quick-buttons{grid-template-columns:1fr;gap:10px}
+ .ota-btn{min-height:54px;padding:10px 14px}
+ .ota-btn span{font-size:14px}
+}

@@ -33,6 +33,18 @@ add('夜は、心がほどける。','Nights at ease.','밤에는 편안한 휴�
 add('遊んだあとの時間まで、思い出に。','Make memories that last beyond the day.','즐거운 하루 뒤의 시간도 추억으로.','玩樂之後的時光，也值得珍藏。');
 add('ナガシマで過ごす、私たちの休日。','Your holiday in Nagashima.','나가시마에서 보내는 우리만의 휴일.','在長島，度過屬於我們的假期。');
 add('ナガシマで過ごす休日を見る','Explore your Nagashima stay','나가시마에서의 휴일 보기','探索長島假期');
+add('最大11名・一棟貸し｜なばなの里・ナガスパ車で5分','Private Villa for up to 11 | 5 min by car to Nabana no Sato & Nagashima Spaland','최대 11명 독채｜나바나노사토·나가시마 스파랜드 차로 5분','最多11人包棟別墅｜開車5分達名花之里與長島溫泉樂園');
+add('なばなの里・ナガスパ近く、','5 min from Nabana & Nagashima,','나바나노사토·나가시마 근처,','鄰近名花之里與長島樂園，');
+add('最大11名で囲む冬の団欒。','a warm winter gathering for up to 11.','최대 11명이 함께하는 따뜻한 겨울 모임.','最多11人圍聚的溫暖冬日假期。');
+add('約22畳のLDKと木と漆のぬくもり。','Spacious 36 m² living-dining with warm wood and urushi lacquer.','약 36㎡의 넓은 거실과 나무·옻칠의 온기.','約36㎡寬敞客餐廳，感受木質與漆藝的溫潤。');
+add('今、いちばん温かい冬旅をひとつ屋根の下で。','Spend the warmest winter getaway together under one roof.','지금 가장 따뜻한 겨울 여행을 한 지붕 아래서.','同一個屋簷下，共享今冬最溫暖的旅行。');
+add('宿の魅力を見る','Explore the villa','숙소 매력 보기','探索別墅魅力');
+add('リビング・食卓の写真','Living & dining photo','거실·식탁 사진','客廳與餐桌照片');
+add('吹き抜け・団欒の写真','Atrium & gathering photo','복층·모임 사진','挑高與聚會照片');
+add('使い慣れた予約サイトからもすぐにご予約いただけます','Or book instantly on your preferred booking platform','익숙한 예약 사이트에서도 바로 예약하실 수 있습니다','亦可透過您熟悉的訂房網站立即預訂');
+add('フォーム入力なし・使い慣れたサイトですぐ予約','Prefer instant booking? Reserve on your favorite platform','폼 입력 없이 익숙한 사이트에서 바로 예약하세요','免填表單，透過熟悉的網站立即預訂');
+add('即時予約・クレジット対応 ↗','Instant booking & card payment ↗','즉시 예약·카드 결제 가능 ↗','即時預訂・支援信用卡 ↗');
+add('即時予約・ポイント利用可 ↗','Instant booking & rewards ↗','즉시 예약·포인트 사용 가능 ↗','即時預訂・可使用點數 ↗');
 add('ヒーロー写真の操作','Slideshow controls','슬라이드 사진 조작','輪播圖片控制');
 add('食卓の写真','Dining photo','식탁 사진','餐桌照片');
 add('リビングの写真','Living room photo','거실 사진','客廳照片');
