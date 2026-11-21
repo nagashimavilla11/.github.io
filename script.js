@@ -33,7 +33,7 @@ add('夜は、心がほどける。','Nights at ease.','밤에는 편안한 휴�
 add('遊んだあとの時間まで、思い出に。','Make memories that last beyond the day.','즐거운 하루 뒤의 시간도 추억으로.','玩樂之後的時光，也值得珍藏。');
 add('ナガシマで過ごす、私たちの休日。','Your holiday in Nagashima.','나가시마에서 보내는 우리만의 휴일.','在長島，度過屬於我們的假期。');
 add('ナガシマで過ごす休日を見る','Explore your Nagashima stay','나가시마에서의 휴일 보기','探索長島假期');
-add('最大11名・一棟貸し｜なばなの里・ナガスパ車で5分','Private Villa for up to 11 | 5 min by car to Nabana no Sato & Nagashima Spaland','최대 11명 독채｜나바나노사토·나가시마 스파랜드 차로 5분','最多11人包棟別墅｜開車5分達名花之里與長島溫泉樂園');
+add('最大11名・一棟貸し｜ナガシマリゾートまで車で5分','Private Villa for up to 11 | 5 min by car to Nagashima Resort','최대 11명 독채｜나가시마 리조트까지 차로 5분','最多11人包棟別墅｜開車5分達長島度假村');
 add('なばなの里・ナガスパ近く、','5 min from Nabana & Nagashima,','나바나노사토·나가시마 근처,','鄰近名花之里與長島樂園，');
 add('最大11名で囲む冬の団欒。','a warm winter gathering for up to 11.','최대 11명이 함께하는 따뜻한 겨울 모임.','最多11人圍聚的溫暖冬日假期。');
 add('約22畳のLDKと木と漆のぬくもり。','Spacious 36 m² living-dining with warm wood and urushi lacquer.','약 36㎡의 넓은 거실과 나무·옻칠의 온기.','約36㎡寬敞客餐廳，感受木質與漆藝的溫潤。');
